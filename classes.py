@@ -7,11 +7,15 @@ class Person:
         self.age = age 
     
     def description(self):
-        print(f"sharan is {self.age} years old")
+        print(f"{self.name} is {self.age} years old and is a {self.human_type}")
 
         
 sharan = Person("Sharan", 17)
+
 print(sharan.name)
 print(sharan.age)
 print(sharan.human_type)
-print(sharan.description)
+sharan.description()
+
+clay = Person("Clay", 18)
+clay.description()
